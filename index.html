@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Compass - Lowe's Career Development</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <a href="#home" class="logo-link">
+          <div class="project-compass-logo">
+            <div class="lowes-logo">LOWE'S</div>
+            <div class="compass-section">
+              <div class="compass-icon">
+                <svg
+                  class="compass-svg"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon
+                    points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"
+                  />
+                  <path d="M12 2l2 2-2 2-2-2z" />
+                </svg>
+              </div>
+              <span class="compass-text">Project Compass</span>
+            </div>
+          </div>
+        </a>
+        <nav class="navigation">
+          <a href="#home" class="nav-link active" data-page="home">Home</a>
+          <a href="#project-hub" class="nav-link" data-page="project-hub"
+            >Project Hub</a
+          >
+          <a href="#growth-map" class="nav-link" data-page="growth-map"
+            >Growth Map</a
+          >
+          <a href="#collaboration" class="nav-link" data-page="collaboration"
+            >Collaboration Café</a
+          >
+        </nav>
+        <button class="login-btn" id="loginBtn">
+          <svg
+            class="login-icon"
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          <span>Login</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Home Page -->
+      <div class="page" id="home-page">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-container">
+            <div class="hero-content">
+              <h1 class="hero-title">Your Career, Your Compass</h1>
+              <p class="hero-subtitle">Discover a new way to grow at Lowe's.</p>
+              <div class="hero-buttons">
+                <a
+                  href="#project-hub"
+                  class="btn btn-primary"
+                  data-page="project-hub"
+                >
+                  Get Started
+                  <svg
+                    class="btn-icon"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+                <a
+                  href="#growth-map"
+                  class="btn btn-primary"
+                  data-page="growth-map"
+                  >Explore Growth Map</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+          <div class="features-container">
+            <div class="features-header">
+              <h2 class="features-title">Everything You Need to Grow</h2>
+              <p class="features-subtitle">
+                Explore our tools designed to accelerate your career journey
+              </p>
+            </div>
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-header">
+                  <div class="feature-icon-container">
+                    <svg
+                      class="feature-icon"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                  </div>
+                  <h3 class="feature-title">Project Hub</h3>
+                </div>
+                <p class="feature-description">
+                  Discover and apply for internal short-term gigs and passion
+                  projects that match your skills and interests.
+                </p>
+                <div class="feature-highlights">
+                  <div class="feature-highlight">
+                    <div class="highlight-dot"></div>
+                    <span>Skill matching</span>
+                  </div>
+                  <div class="feature-highlight">
+                    <div class="highlight-dot"></div>
+                    <span>Filter by department</span>
+                  </div>
+                  <div class="feature-highlight">
+                    <div class="highlight-dot"></div>
+                    <span>Apply instantly</span>
+                  </div>
+                </div>
+                <a
+                  href="#project-hub"
+                  class="btn btn-outline"
+                  data-page="project-hub"
+                >
+                  Explore Project Hub
+                  <svg
+                    class="btn-icon"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-header">
+                  <div class="feature-icon-container">
+                    <svg
+                      class="feature-icon"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline
+                        points="22 12 18 12 15 21 9 3 6 12 2 12"
+                      ></polyline>
+                    </svg>
+                  </div>
+                  <h3 class="feature-title">Growth Map</h3>
+                </div>
+                <p class="feature-description">
+                  Chart your career path with personalized skill development
+                  roadmaps and unlock achievements.
+                </p>
+                <div class="feature-highlights">
+                  <div class="feature-highlight">
+                    <div class="highlight-dot"></div>
+                    <span>Skill tracking</span>
+                  </div>
+                  <div class="feature-highlight">
+                    <div class="highlight-dot"></div>
+                    <span>Career roadmaps</span>
+                  </div>
+                  <div class="feature-highlight">
+                    <div class="highlight-dot"></div>
+                    <span>Badge system</span>
+                  </div>
+                </div>
+                <a
+                  href="#growth-map"
+                  class="btn btn-outline"
+                  data-page="growth-map"
+                >
+                  Explore Growth Map
+                  <svg
+                    class="btn-icon"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-header">
+                  <div class="feature-icon-container">
+                    <svg
+                      class="feature-icon"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <h3 class="feature-title">Collaboration Café</h3>
+                </div>
+                <p class="feature-description">
+                  Connect with colleagues, join community groups, and celebrate
+                  achievements together.
+                </p>
+                <div class="feature-highlights">
+                  <div class="feature-highlight">
+                    <div class="highlight-dot"></div>
+                    <span>Virtual coffee chats</span>
+                  </div>
+                  <div class="feature-highlight">
+                    <div class="highlight-dot"></div>
+                    <span>Community groups</span>
+                  </div>
+                  <div class="feature-highlight">
+                    <div class="highlight-dot"></div>
+                    <span>Recognition wall</span>
+                  </div>
+                </div>
+                <a
+                  href="#collaboration"
+                  class="btn btn-outline"
+                  data-page="collaboration"
+                >
+                  Explore Collaboration Café
+                  <svg
+                    class="btn-icon"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+          <div class="stats-container">
+            <div class="stats-header">
+              <h2 class="stats-title">Making an Impact Together</h2>
+              <p class="stats-subtitle">
+                See how Project Compass is transforming careers at Lowe's
+              </p>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <svg
+                  class="stat-icon"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path
+                    d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"
+                  ></path>
+                </svg>
+                <div class="stat-value">156</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-card">
+                <svg
+                  class="stat-icon"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <div class="stat-value">2,847</div>
+                <div class="stat-label">Active Associates</div>
+              </div>
+              <div class="stat-card">
+                <svg
+                  class="stat-icon"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <div class="stat-value">89</div>
+                <div class="stat-label">Mentors Available</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <div class="cta-container">
+            <h2 class="cta-title">Ready to Navigate Your Future?</h2>
+            <p class="cta-subtitle">
+              Join thousands of Lowe's associates who are taking control of
+              their career journey with Project Compass.
+            </p>
+            <div class="cta-buttons">
+              <a
+                href="#project-hub"
+                class="btn btn-primary"
+                data-page="project-hub"
+                >Join the Community</a
+              >
+              <a
+                href="#growth-map"
+                class="btn btn-primary"
+                data-page="growth-map"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Project Hub Page -->
+      <div class="page hidden" id="project-hub-page">
+        <div class="page-container">
+          <div class="page-header">
+            <h1 class="page-title">Project Hub</h1>
+            <p class="page-subtitle">
+              Discover and apply for internal projects and passion initiatives
+            </p>
+            <div class="skill-match-banner">
+              <svg
+                class="banner-icon"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"
+                ></path>
+              </svg>
+              <span class="banner-text"
+                ><strong>Matched for You:</strong> Green Store Sustainability
+                Pilot</span
+              >
+            </div>
+          </div>
+
+          <!-- Filters -->
+          <div class="filters-section">
+            <h3 class="filters-title">Filter Projects</h3>
+            <div class="filters-grid">
+              <div class="filter-group">
+                <label class="filter-label">Department</label>
+                <select class="filter-select" id="departmentFilter">
+                  <option value="">All Departments</option>
+                  <option value="Operations">Operations</option>
+                  <option value="Customer Service">Customer Service</option>
+                  <option value="Technology">Technology</option>
+                  <option value="Human Resources">Human Resources</option>
+                  <option value="Learning & Development">
+                    Learning & Development
+                  </option>
+                  <option value="Community Relations">
+                    Community Relations
+                  </option>
+                  <option value="Logistics">Logistics</option>
+                  <option value="Safety">Safety</option>
+                  <option value="Marketing">Marketing</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="filter-label">Skills</label>
+                <select class="filter-select" id="skillFilter">
+                  <option value="">All Skills</option>
+                  <option value="Project Management">Project Management</option>
+                  <option value="Data Analysis">Data Analysis</option>
+                  <option value="Sustainability">Sustainability</option>
+                  <option value="UX Design">UX Design</option>
+                  <option value="Customer Research">Customer Research</option>
+                  <option value="Innovation">Innovation</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="filter-label">Time Required</label>
+                <select class="filter-select" id="timeFilter">
+                  <option value="">Any Duration</option>
+                  <option value="1-2 weeks">1-2 weeks</option>
+                  <option value="2-3 weeks">2-3 weeks</option>
+                  <option value="2-4 weeks">2-4 weeks</option>
+                  <option value="3-4 weeks">3-4 weeks</option>
+                  <option value="3-5 weeks">3-5 weeks</option>
+                  <option value="4-6 weeks">4-6 weeks</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="filter-label">Location</label>
+                <select class="filter-select" id="locationFilter">
+                  <option value="">All Locations</option>
+                  <option value="Remote">Remote</option>
+                  <option value="Charlotte, NC">Charlotte, NC</option>
+                  <option value="Mooresville, NC">Mooresville, NC</option>
+                  <option value="Multiple Locations">Multiple Locations</option>
+                  <option value="Local Stores">Local Stores</option>
+                  <option value="Distribution Centers">
+                    Distribution Centers
+                  </option>
+                  <option value="Training Centers">Training Centers</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommended Projects -->
+          <section class="projects-section">
+            <h2 class="projects-title">Recommended for You</h2>
+            <div class="projects-grid" id="recommendedProjects"></div>
+          </section>
+
+          <!-- All Projects -->
+          <section class="projects-section">
+            <h2 class="projects-title">
+              All Projects (<span id="allProjectsCount">0</span>)
+            </h2>
+            <div class="projects-grid" id="allProjects"></div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Growth Map Page -->
+      <div class="page hidden" id="growth-map-page">
+        <div class="page-container">
+          <div class="page-header">
+            <h1 class="page-title">Growth Map</h1>
+            <p class="page-subtitle">
+              Chart your path to professional growth at Lowe's
+            </p>
+          </div>
+
+          <!-- Dream Role Input -->
+          <div class="dream-role-section">
+            <h3 class="dream-role-title">What's your dream role at Lowe's?</h3>
+            <div class="dream-role-input">
+              <input
+                type="text"
+                class="input"
+                id="dreamRoleInput"
+                placeholder="e.g., Sustainability Director, Regional Manager, Innovation Lead..."
+              />
+              <button class="btn btn-primary" id="generatePathBtn">
+                Generate Path
+              </button>
+            </div>
+          </div>
+
+          <!-- Skill Domains -->
+          <section class="skill-domains-section">
+            <h2 class="section-title">Skill Domains Progress</h2>
+            <div class="skill-domains-grid" id="skillDomainsGrid"></div>
+          </section>
+
+          <!-- Career Roadmap -->
+          <section class="roadmap-section hidden" id="roadmapSection">
+            <h2 class="section-title">Your Career Path</h2>
+            <div class="roadmap-goal" id="roadmapGoal"></div>
+            <div class="milestones-grid" id="milestonesGrid"></div>
+          </section>
+
+          <!-- Badges -->
+          <section class="badges-section">
+            <h2 class="section-title">Badges & Achievements</h2>
+            <div class="badges-grid" id="badgesGrid"></div>
+          </section>
+
+          <!-- Mentors -->
+          <section class="mentors-section">
+            <h2 class="section-title">Suggested Mentors</h2>
+            <div class="mentors-grid" id="mentorsGrid"></div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Collaboration Page -->
+      <div class="page hidden" id="collaboration-page">
+        <div class="page-container">
+          <div class="page-header">
+            <h1 class="page-title">Collaboration Café</h1>
+            <p class="page-subtitle">
+              Connect, collaborate, and celebrate with your Lowe's community
+            </p>
+          </div>
+
+          <!-- Connect with Similar Interests -->
+          <section class="coffee-chat-section">
+            <div class="coffee-chat-card">
+              <div class="coffee-chat-header">
+                <svg
+                  class="coffee-icon"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8ZM6 1v3M10 1v3M14 1v3"
+                  ></path>
+                </svg>
+                <h3 class="coffee-chat-title">Connect with people with similar interests for a coffee chat</h3>
+              </div>
+
+              <!-- Recommendations Panel -->
+              <div class="recommendations-panel" id="recommendationsPanel">
+                <!-- Recommendations will be populated by JavaScript -->
+              </div>
+            </div>
+          </section>
+
+          <!-- Community Groups -->
+          <section class="community-groups-section">
+            <h2 class="section-title">Community Groups</h2>
+            <div class="community-groups-grid" id="communityGroupsGrid"></div>
+          </section>
+
+          <!-- Recognition Wall -->
+          <section class="recognition-section">
+            <h2 class="section-title">
+              <svg
+                class="recognition-icon"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline
+                  points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+                ></polyline>
+              </svg>
+              Recognition Wall
+            </h2>
+            <div class="recognition-grid" id="recognitionGrid"></div>
+            <div class="recognition-action">
+              <button class="btn btn-primary">
+                <svg
+                  class="btn-icon"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+                Give Recognition
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Project Details Page -->
+      <div class="page hidden" id="project-details-page">
+        <div class="page-container">
+          <button class="back-btn" id="backToProjectsBtn">
+            <svg
+              class="back-icon"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Back to Project Hub
+          </button>
+          <div id="projectDetailsContent"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="project-compass-logo">
+          <div class="lowes-logo">LOWE'S</div>
+          <div class="compass-section">
+            <div class="compass-icon">
+              <svg
+                class="compass-svg"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polygon
+                  points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"
+                />
+                <path d="M12 2l2 2-2 2-2-2z" />
+              </svg>
+            </div>
+            <span class="compass-text">Project Compass</span>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          © 2024 Lowe's Companies, Inc. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay hidden" id="loginModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Welcome Back</h2>
+          <button class="modal-close" id="closeLoginModal">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <p class="modal-subtitle">
+          Sign in to your Lowe's Project Compass account
+        </p>
+
+        <form class="login-form" id="loginForm">
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <div class="input-group">
+              <svg
+                class="input-icon"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <input
+                type="email"
+                class="input"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <div class="input-group">
+              <svg
+                class="input-icon"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <circle cx="12" cy="16" r="1"></circle>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <input
+                type="password"
+                class="input"
+                id="passwordInput"
+                placeholder="Enter your password"
+                required
+              />
+              <button type="button" class="password-toggle" id="passwordToggle">
+                <svg
+                  class="eye-icon"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox" />
+              <span>Remember me</span>
+            </label>
+            <button type="button" class="forgot-password">
+              Forgot password?
+            </button>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary btn-full"
+            id="loginSubmitBtn"
+          >
+            <span class="btn-text">Sign In</span>
+            <div class="btn-loader hidden">
+              <div class="spinner"></div>
+              <span>Signing in...</span>
+            </div>
+          </button>
+
+          <div class="divider">
+            <span>Or continue with</span>
+          </div>
+
+          <div class="sso-buttons">
+            <button type="button" class="btn btn-outline">
+              <svg class="sso-icon" viewBox="0 0 24 24">
+                <path
+                  fill="#4285F4"
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                />
+              </svg>
+              Google
+            </button>
+            <button type="button" class="btn btn-outline">
+              <svg class="sso-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.024-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.759-1.378l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001.012.001z"
+                />
+              </svg>
+              Microsoft
+            </button>
+          </div>
+
+          <div class="signup-link">
+            <span
+              >Don't have an account?
+              <button type="button" class="link-btn">Sign up</button></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
